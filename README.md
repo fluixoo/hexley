@@ -1,4 +1,15 @@
-# hexley
+<div align="center">
+
+<img src="docs/img/banner.png" alt="HEXLEY — six-agent on-chain desk for Robinhood Chain" width="100%">
+
+[![python](https://img.shields.io/badge/python-3.11%20%7C%203.12-00c805?style=flat-square&logo=python&logoColor=white&labelColor=0b0f0d)](pyproject.toml)
+[![license](https://img.shields.io/badge/license-MIT-00c805?style=flat-square&labelColor=0b0f0d)](LICENSE)
+[![robinhood chain](https://img.shields.io/badge/robinhood%20chain-4663-00c805?style=flat-square&labelColor=0b0f0d)](docs/robinhood-chain-notes.md)
+[![paper only](https://img.shields.io/badge/paper%20only-sends%20no%20transactions-ffb627?style=flat-square&labelColor=0b0f0d)](DISCLAIMER.md)
+
+**[Live desk](https://hexley.xyz)** · [Methodology](docs/methodology.md) · [Architecture](ARCHITECTURE.md) · [Agents](docs/agents/README.md)
+
+</div>
 
 **HEXLEY** is the operator: a six-agent on-chain desk for **Robinhood Chain**. The Python package is `chaindesk`, the browser dashboard in `dashboard/` is hexley itself.
 It reads the launchpad straight from raw logs, scores a wallet from what happens to price after it buys, brute-forces exit rules on those paths, and tells you whether your copy route is fast enough to matter.
