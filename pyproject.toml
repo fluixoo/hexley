@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "chaindesk"
 version = "0.3.0"
-description = "Six-agent on-chain desk for Robinhood Chain: reads the launchpad from raw logs, scores wallets, brute-forces exit rules. Paper only."
+description = "Six-agent on-chain desk for Robinhood Chain: reads the launchpad from raw logs, scores wallets, brute-forces exit rules."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
