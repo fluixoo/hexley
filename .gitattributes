@@ -1,0 +1,23 @@
+# Linguist classification.
+#
+# The dashboard and the data drops are build artifacts, not source. The desk is
+# rendered by chaindesk/desk.py from a snapshot the agents compute, and its assets
+# are inlined into the single HTML file — which is why one generated file outweighs
+# the whole Python package by four to one. Marking them generated keeps the language
+# breakdown pointing at the code that is actually written here, and collapses them
+# in diffs and blame instead of drowning a review in base64.
+#
+# Regenerate with: make desk
+dashboard/*.html linguist-generated=true
+data/*.json      linguist-generated=true
+data/*.csv       linguist-generated=true
+
+# Screenshots are binary; never try to diff or merge them.
+docs/img/*.png binary
+
+# Keep line endings sane across platforms for everything we do hand-edit.
+*.py   text eol=lf
+*.toml text eol=lf
+*.md   text eol=lf
+*.cfg  text eol=lf
+Makefile text eol=lf
