@@ -1,0 +1,20 @@
+# copy to desk.toml and edit. every address is public on-chain data.
+
+[desk]
+# wallet whose transfers get a HIT flag in the block stream and a LEADER panel
+leader = "0x5fa57fcaf86e137cb8185c4cb2c01ea7b5b14cfb"
+
+# crowd set: wallets that entered the same launches as the leader within 30 blocks
+# on at least 4 launches (output of `chaindesk cluster`). any of them buying a fresh
+# launch fires the verdict. keep it small; a big set fires on everything.
+crowd = [
+  "0x5fa57fcaf86e137cb8185c4cb2c01ea7b5b14cfb",
+  "0xf88f290d0a33d2c55f4cd9c6388d9fd968ae2d17",
+]
+
+backfill_blocks = 900        # 90 s of chain at 100 ms blocks
+close_after_blocks = 300     # a launch nobody touched for 30 s is closed
+fire_buys = 12               # buys inside the first 60 blocks
+fire_buyers = 8              # distinct buyers inside the first 60 blocks
+watch_buys = 6
+poll_s = 0.25

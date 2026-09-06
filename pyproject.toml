@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chaindesk"
+version = "0.3.0"
+description = "Six-agent on-chain desk for Robinhood Chain: reads the launchpad from raw logs, scores wallets, brute-forces exit rules. Paper only."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "fluixoo" }]
+keywords = ["ethereum", "robinhood-chain", "arbitrum-orbit", "launchpad", "on-chain", "agents", "backtest"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Office/Business :: Financial",
+  "Development Status :: 3 - Alpha",
+]
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+chaindesk = "chaindesk.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/fluixoo/hexley"
+Issues = "https://github.com/fluixoo/hexley/issues"
+
+[tool.setuptools.packages.find]
+include = ["chaindesk*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 160
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501", "E741", "B023"]

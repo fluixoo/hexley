@@ -1,0 +1,211 @@
+{
+ "computed_at": "2026-09-06 10:28 UTC",
+ "method": "first 20 curve buys per token, tx sender via eth_getTransactionByHash, bundlers 0x4337\u2026 excluded, co-entry pairs within 30 blocks, union-find with min 4 shared launches, kinds via eth_getCode",
+ "tokens": 115,
+ "early_buyers": 1095,
+ "pairs_checked": 7155,
+ "kinds_top": {
+  "eoa": 116,
+  "7702": 4
+ },
+ "kinds_n": 120,
+ "top_wallets": [
+  {
+   "address": "0x5fa57fcaf86e137cb8185c4cb2c01ea7b5b14cfb",
+   "launches": 59,
+   "kind": "eoa"
+  },
+  {
+   "address": "0xf88f290d0a33d2c55f4cd9c6388d9fd968ae2d17",
+   "launches": 42,
+   "kind": "eoa"
+  },
+  {
+   "address": "0xd11c302cffd05d1e51d59f6e1a120c89fa93be39",
+   "launches": 41,
+   "kind": "eoa"
+  },
+  {
+   "address": "0x3933570f47b229e0f475de601321167f91d76a05",
+   "launches": 37,
+   "kind": "eoa"
+  },
+  {
+   "address": "0xd91abf0e7a4fea07b1dde4eeb3fc3dc95ceafb56",
+   "launches": 33,
+   "kind": "eoa"
+  },
+  {
+   "address": "0x17967b619738ba7bdf0187b6d3777abf42c409aa",
+   "launches": 21,
+   "kind": "eoa"
+  },
+  {
+   "address": "0xf137d28284041f96411a83090bfdce1b1c1f8f2c",
+   "launches": 20,
+   "kind": "eoa"
+  },
+  {
+   "address": "0x53e68553ca08f512423628d64c01b0a14dfcda99",
+   "launches": 19,
+   "kind": "eoa"
+  },
+  {
+   "address": "0x6d98300f14377aca02c4d58d768bda8d5827a778",
+   "launches": 17,
+   "kind": "7702:0x63c0c19a282a1b52b07dd5a65b58948a07dae32b"
+  },
+  {
+   "address": "0x92529d41fb61c9a6c2667e40d3b34817070da1d9",
+   "launches": 15,
+   "kind": "eoa"
+  },
+  {
+   "address": "0xc2de624b642f6695bb2fe62be2adcc53723b4d9f",
+   "launches": 15,
+   "kind": "eoa"
+  },
+  {
+   "address": "0x0bf819f07950138f8e24fc2c11e44d822b7410ce",
+   "launches": 14,
+   "kind": "7702:0x63c0c19a282a1b52b07dd5a65b58948a07dae32b"
+  },
+  {
+   "address": "0x7cbfa2d87154006ad356766c995a279f88d96a04",
+   "launches": 14,
+   "kind": "eoa"
+  },
+  {
+   "address": "0x2fc047719d80d24f02ea8f391a4862bfc6c12df3",
+   "launches": 13,
+   "kind": "eoa"
+  },
+  {
+   "address": "0xd893c6ba098c62cc3a4ac6bdeecd8c6ac9ab3646",
+   "launches": 13,
+   "kind": "eoa"
+  }
+ ],
+ "clusters": [
+  {
+   "id": 1,
+   "size": 22,
+   "members": [
+    "0x5fa57fcaf86e137cb8185c4cb2c01ea7b5b14cfb",
+    "0xf88f290d0a33d2c55f4cd9c6388d9fd968ae2d17",
+    "0xd11c302cffd05d1e51d59f6e1a120c89fa93be39",
+    "0x3933570f47b229e0f475de601321167f91d76a05",
+    "0x17967b619738ba7bdf0187b6d3777abf42c409aa",
+    "0x53e68553ca08f512423628d64c01b0a14dfcda99",
+    "0x6d98300f14377aca02c4d58d768bda8d5827a778",
+    "0x0bf819f07950138f8e24fc2c11e44d822b7410ce"
+   ],
+   "shared_launches": 42,
+   "kinds": {
+    "eoa": 19,
+    "7702": 3
+   }
+  },
+  {
+   "id": 2,
+   "size": 5,
+   "members": [
+    "0x00fe92e51f487407a49ce7f7fab9eaecada119fb",
+    "0x24e91130ba7fb21f853d709a1ffb8dee99ba7ba3",
+    "0x6078ee8a93697c6d67863fcbff77141d9ab358b2",
+    "0xa0ed47a5dc1017db87d3807ecd95750b3ea0ff85",
+    "0xa23103777a932eb2a99826e01d48f62f954504f6"
+   ],
+   "shared_launches": 4,
+   "kinds": {
+    "eoa": 5
+   }
+  },
+  {
+   "id": 3,
+   "size": 4,
+   "members": [
+    "0xd91abf0e7a4fea07b1dde4eeb3fc3dc95ceafb56",
+    "0xf137d28284041f96411a83090bfdce1b1c1f8f2c",
+    "0x92529d41fb61c9a6c2667e40d3b34817070da1d9",
+    "0xc2de624b642f6695bb2fe62be2adcc53723b4d9f"
+   ],
+   "shared_launches": 4,
+   "kinds": {
+    "eoa": 4
+   }
+  },
+  {
+   "id": 4,
+   "size": 4,
+   "members": [
+    "0xff1b8ac72784cbcdd965373447a0c0161ad0aff4",
+    "0xb70933c0204ca413a6c56f8f07cb0aa6ea3f20d9",
+    "0x522663ab1aa66848507514ba60f01aa432b9bf60",
+    "0xd666b2793827ee335e4b18e323ff63425182e82b"
+   ],
+   "shared_launches": 11,
+   "kinds": {
+    "eoa": 4
+   }
+  },
+  {
+   "id": 5,
+   "size": 4,
+   "members": [
+    "0x3d4259ecd7aa66968c6dbe44f34d37fcda817607",
+    "0xc1f04667306bd07d3c8101ddd14ee8aca5299a35",
+    "0x5a1cfdfa53b40d2c8117df9e03c14229cba680c5",
+    "0x76633fc6666274b9d7bcfa3061971b7bf4902e90"
+   ],
+   "shared_launches": 7,
+   "kinds": {
+    "eoa": 4
+   }
+  },
+  {
+   "id": 6,
+   "size": 3,
+   "members": [
+    "0x7cbfa2d87154006ad356766c995a279f88d96a04",
+    "0x2fd85f6ac0aad7ffccb1bc79f3022c4e1d612906",
+    "0x8b421ccbd26dfd986c781e56390efb243b6bd9fa"
+   ],
+   "shared_launches": 11,
+   "kinds": {
+    "eoa": 3
+   }
+  },
+  {
+   "id": 7,
+   "size": 3,
+   "members": [
+    "0x9fb44358692b903050ba2e3237a737afb9ecfa17",
+    "0xbcce801405c37586f27e213205720c3d60c12f98",
+    "0xdb08276363dd9894dce740a3d847cea5312024fa"
+   ],
+   "shared_launches": 8,
+   "kinds": {
+    "eoa": 3
+   }
+  },
+  {
+   "id": 8,
+   "size": 3,
+   "members": [
+    "0x3a36d0168f82f5d74c4da481087469a4192147b9",
+    "0x4e678aaa3ec6c553e3b106065e8fde07e2daae3c",
+    "0x3c565a042530dbb7603a46eff1f06eba203d095c"
+   ],
+   "shared_launches": 6,
+   "kinds": {
+    "eoa": 3
+   }
+  }
+ ],
+ "leader": {
+  "address": "0x5fa57fcaf86e137cb8185c4cb2c01ea7b5b14cfb",
+  "launches_in_window": 59,
+  "kind": "eoa"
+ }
+}

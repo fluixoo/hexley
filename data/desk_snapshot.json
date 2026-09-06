@@ -1,0 +1,324 @@
+{
+ "generated_at": "2026-09-06 10:19 UTC",
+ "scorecard": {
+  "wallet": "0x5fa57fcaf86e137cb8185c4cb2c01ea7b5b14cfb",
+  "window_start_utc": "2026-08-29 15:55",
+  "window_end_utc": "2026-09-05 23:03",
+  "start_block": 49277601,
+  "end_block": 55498401,
+  "transfers": 588,
+  "tokens": 156,
+  "entries_scored": 147,
+  "curve_entries": 115,
+  "graduated": 64,
+  "p_x1_5": 0.585,
+  "p_x2": 0.422,
+  "p_x3": 0.272,
+  "p_x5": 0.122,
+  "p_x10": 0.041,
+  "median_max_x": 1.76,
+  "median_low_1h_x": 0.68,
+  "median_close_6h_x": 0.65,
+  "copier_premium": 1.081,
+  "median_hold_min": 3.2,
+  "his_win_rate": 0.32,
+  "his_median_realized_x": 0.89,
+  "max_bucket_counts": {
+   "lt1.5": 61,
+   "1.5-3": 46,
+   "3-10": 34,
+   "10+": 6
+  },
+  "median_time_to_x2_min": 0.9,
+  "p_x2_given_graduated": 0.88,
+  "p_x2_given_died": 0.33,
+  "computed_at": "2026-09-05 23:25 UTC",
+  "source": "final.py over wtx + cache_curve + gecko candles",
+  "entries_by_day": {
+   "08-29": 1,
+   "08-30": 8,
+   "08-31": 2,
+   "09-02": 1,
+   "09-04": 69,
+   "09-05": 66
+  }
+ },
+ "referee": {
+  "combos": 852096,
+  "runtime_s": 80,
+  "top_by_ev": [
+   {
+    "ladder": "100%@x4",
+    "stop": "-",
+    "time": "60m",
+    "trail": "-",
+    "ev": 31.4,
+    "median": -22.2,
+    "win": 30,
+    "pf": 2.15,
+    "maxdd": 5.3
+   },
+   {
+    "ladder": "100%@x4",
+    "stop": "-",
+    "time": "30m",
+    "trail": "-",
+    "ev": 30.4,
+    "median": -22.1,
+    "win": 29,
+    "pf": 2.22,
+    "maxdd": 4.6
+   }
+  ],
+  "top_robust": [
+   {
+    "ladder": "100%@x5",
+    "stop": "0.6",
+    "time": "360m",
+    "trail": "40%>=x1.5",
+    "ev": 27.3,
+    "median": -5.4,
+    "win": 41,
+    "pf": 2.73,
+    "maxdd": 3.5
+   }
+  ],
+  "top_pf": [
+   {
+    "ladder": "100%@x4",
+    "stop": "-",
+    "time": "360m",
+    "trail": "15%>=x1",
+    "ev": 19.2,
+    "median": 5.5,
+    "win": 57,
+    "pf": 5.79,
+    "maxdd": 0.5
+   }
+  ],
+  "computed_at": "2026-09-05 23:40 UTC",
+  "source": "brute.py grid over paths.json",
+  "stop_effect": [
+   {
+    "stop": "None",
+    "best_ev": 31.4
+   },
+   {
+    "stop": "0.9",
+    "best_ev": 25.5
+   },
+   {
+    "stop": "0.8",
+    "best_ev": 26.7
+   },
+   {
+    "stop": "0.7",
+    "best_ev": 27.0
+   },
+   {
+    "stop": "0.6",
+    "best_ev": 27.5
+   },
+   {
+    "stop": "0.5",
+    "best_ev": 27.0
+   },
+   {
+    "stop": "0.4",
+    "best_ev": 27.0
+   },
+   {
+    "stop": "0.3",
+    "best_ev": 26.5
+   }
+  ],
+  "configs": {
+   "A: TP x4, тайм-стоп 15м": {
+    "ev": 29.0,
+    "median": -12.5,
+    "win": 30,
+    "pf": 2.28,
+    "maxdd": 4.1
+   },
+   "B: TP x4 + трейлинг 15% с входа": {
+    "ev": 19.2,
+    "median": 5.5,
+    "win": 57,
+    "pf": 5.81,
+    "maxdd": 0.5
+   },
+   "C: без TP, стоп 0.8, трейлинг 15% после x1.5": {
+    "ev": 26.8,
+    "median": -4.6,
+    "win": 48,
+    "pf": 3.45,
+    "maxdd": 1.4
+   },
+   "D: TP x5, стоп 0.6, трейлинг 40% после x1.5": {
+    "ev": 34.6,
+    "median": -5.2,
+    "win": 41,
+    "pf": 3.18,
+    "maxdd": 3.5
+   },
+   "E: TP x2, стоп 0.5, 15м если нет TP": {
+    "ev": 13.3,
+    "median": -6.0,
+    "win": 41,
+    "pf": 1.71,
+    "maxdd": 3.6
+   }
+  },
+  "bootstrap_A": {
+   "ev": 29.0,
+   "ci_lo": 14.6,
+   "ci_hi": 45.4
+  },
+  "delay_ev_A": {
+   "0.1": 29.0,
+   "1": 15.3,
+   "3": 10.5,
+   "5": 6.5,
+   "15": 7.6,
+   "60": -6.3
+  },
+  "delay_note": "entry = first print >= N s after the leader; 1 s / 3 s from the fine-delay run 2026-09-06"
+ },
+ "decoder": {
+  "sample": [
+   {
+    "tx": "0x69f90b03d18859428b5fb293c6c6894761a4bf529bae9148032d3618bbadb6f6",
+    "token": "0x040621ae",
+    "side": "buy",
+    "quote_usd": 124.35,
+    "tokens": 28164566,
+    "venue": "launchpad curve"
+   },
+   {
+    "tx": "0xa425ac5daa009a9ed3e14f2ee574501e59e753aac58c09df379371f8870c2953",
+    "token": "HAIR",
+    "side": "buy",
+    "quote_usd": 97.14,
+    "tokens": 28470679,
+    "venue": "launchpad curve"
+   },
+   {
+    "tx": "0xbb1629f4ef5f4be3ef7d6729221d5081dce3d78e0929a27cebf03d497ecca2d9",
+    "token": "0x07b21f34",
+    "side": "buy",
+    "quote_usd": 122.67,
+    "tokens": 32945391,
+    "venue": "launchpad curve"
+   },
+   {
+    "tx": "0x964a60e3f8927b32462af2009a8e6dcf0c35e3d5b152c3d5e0a3e662e188b1f8",
+    "token": "0x0884f8fd",
+    "side": "buy",
+    "quote_usd": 245.31,
+    "tokens": 43588775,
+    "venue": "launchpad curve"
+   },
+   {
+    "tx": "0x4547a0e31864cf17ac17e7be5323320540fc95bb14dbae9ad629d17c2b9fbe19",
+    "token": "0x0e2aab97",
+    "side": "buy",
+    "quote_usd": 242.42,
+    "tokens": 42199503,
+    "venue": "launchpad curve"
+   },
+   {
+    "tx": "0xfb2a2bb58f2fbd405e6d6da2ce6be946992d91b45c4858bb36d24df955d834e4",
+    "token": "0x12114b70",
+    "side": "buy",
+    "quote_usd": 0.3,
+    "tokens": 21364444,
+    "venue": "launchpad curve"
+   },
+   {
+    "tx": "0x585cd550dd148c46865af899d90d107012ba5fe9fb63bd0421fb2c93409fa76b",
+    "token": "CORG",
+    "side": "buy",
+    "quote_usd": 121.39,
+    "tokens": 12252754,
+    "venue": "launchpad curve"
+   },
+   {
+    "tx": "0x17cb1b41523c49d5ed905efe52f46a05b93ea6a1cb4ebead9e7bcc8d702a63a7",
+    "token": "Chadnev",
+    "side": "buy",
+    "quote_usd": 249.58,
+    "tokens": 24082353,
+    "venue": "launchpad curve"
+   }
+  ],
+  "sign_test": {
+   "before": 228,
+   "after": 4958,
+   "total": 4958,
+   "token": "RWA (Real World Agents) swaps, Uniswap v4 + curve",
+   "computed_at": "2026-09-06 04:xx UTC",
+   "source": "exact2.py sign check"
+  },
+  "curve_buy_topic": "0xec36bf571f136799e8dc0b0b8bea4b04d8bd3d43de838aab0d5fc21d4cbfc455",
+  "curve_sell_topic": "0x8113d738abdcb6b38357e9d53a54a7157861a09031b453651f0fe7fe151f59df",
+  "v4_swap_topic": "0x40e9cecb9f5f1f1c5b9c97dec2917b7ee92e57ba5563708daca94dd84ad7112f"
+ },
+ "genealogist": {
+  "leader": {
+   "address": "0x5fa57fcaf86e137cb8185c4cb2c01ea7b5b14cfb",
+   "kind": "eoa (code 0x)",
+   "linked_wallet": "0xf88f290d0a33d2c55f4cd9c6388d9fd968ae2d17",
+   "transfers_between": 12
+  },
+  "routers": [
+   {
+    "address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+    "role": "launchpad router",
+    "transfers": 304
+   },
+   {
+    "address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+    "role": "uniswap v4 pool manager",
+    "transfers": 171
+   }
+  ],
+  "verified_7702": [
+   {
+    "address": "0x0c957670b075388a64515473d1fce92f0eb8915a",
+    "delegate": "0xe6cae83bde06e4c305530e199d7217f42808555b",
+    "note": "retail app account, sells via ERC-4337 bundlers 0x4337…"
+   },
+   {
+    "address": "0xf25449008aae0369b0ea1869f33c6626af3ffc9c",
+    "delegate": "0xe6cae83bde06e4c305530e199d7217f42808555b",
+    "note": "same delegate, same app"
+   }
+  ],
+  "rwa_sellers_7702_count": 150,
+  "rwa_curve_wallets": 186,
+  "computed_at": "2026-09-06",
+  "source": "eth_getCode + receipts, hist/rc/exact2 scripts"
+ },
+ "lag": {
+  "measured_at": "2026-09-05",
+  "source": "rh-scan tx block numbers, same leader entries",
+  "rows": [
+   {
+    "copier": "leader (0x5fa5…)",
+    "token": "UNCLES / CORGI / DOGE",
+    "lag_blocks": "0 (same block, 3 wallets)"
+   },
+   {
+    "copier": "GMGN copy (0xd11C…)",
+    "token": "UNCLES / CORGI / DOGE",
+    "lag_blocks": "+1 / +4 / +1"
+   },
+   {
+    "copier": "BasedBot copy (user)",
+    "token": "UNCLES / CORGI / DOGE",
+    "lag_blocks": "+5 / +7 / +10"
+   }
+  ],
+  "chain": "robinhood · single sequencer FCFS · tip 0 · ~100 ms blocks"
+ }
+}
